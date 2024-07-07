@@ -317,7 +317,7 @@
     {
       "ref": "encoder",
       "name": "encoder",
-      "identifier": "encoder_0",
+      "identifier": "encoder",
       "compatible": "alps,ec11",
       "label": "Encoder"
     }
