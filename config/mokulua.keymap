@@ -79,7 +79,7 @@
 // |      |     |      |        |       |      |RGB_EFR|   |RGB_EFF|       |       |       |       |     |      |
 // --------------------------------------------------    --------------------------------------------------------
                         bindings = <
-   &bt BT_CLR &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5 &trans                                               &trans      &trans          &trans &trans     &trans &none  &trans
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans                                               &trans      &trans          &trans &trans     &trans &none  &trans
    &trans     &bt BT_PRV   &bt BT_NXT   &trans       &sys_reset   &trans       &trans                                                           &trans          &trans &sys_reset &trans &trans &trans
    &trans     &trans       &trans       &trans       &trans       &trans       &trans                                               &trans      &trans          &trans &trans     &trans &trans &trans
    &trans     &none        &trans       &trans       &trans       &trans       &bootloader     &rgb_ug RGB_TOG    &ext_power EP_TOG &bootloader &trans          &trans &trans     &trans &trans &trans
