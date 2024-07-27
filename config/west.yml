@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/mechwild
     - name: lesshonor
       url-base: https://github.com/lesshonor
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
     # Additional modules containing boards/shields/custom code can be listed here as well.
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -15,8 +17,8 @@ manifest:
       revision: main
       clone-depth: 1
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: caksoylar
+      revision: caksoylar/experimental #recently-rebased mouse branch
       clone-depth: 1
       import: app/west.yml
   self:
