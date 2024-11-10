@@ -12,7 +12,7 @@ manifest:
     - name: mechwild-zmk-keyboards
       #remote: mechwild
       remote: lesshonor  # Eventually, you'll want to swap this out with mechwild.
-      revision: main
+      revision: storage
       clone-depth: 1
     - name: zmk
       remote: zmkfirmware
