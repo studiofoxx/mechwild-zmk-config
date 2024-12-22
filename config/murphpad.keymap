@@ -18,12 +18,16 @@
  * 2. Change the sensors node to only include the one you used.
 */
 
-&encoder_1 {
+&middle_left_encoder {
     status = "okay";
 };
 
-&encoder_2 {
+&top_right_encoder {
     status = "okay";
+};
+
+&sensors {
+    sensors = <&middle_left_encoder &top_right_encoder>;
 };
 
 / {
@@ -49,12 +53,6 @@
             key-positions = <0 3>;
             bindings = <&bt BT_NXT>;
         };
-    };
-
-    sensors: sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&encoder_1 &encoder_2>;
-        triggers-per-rotation = <20>;
     };
 
     keymap {
