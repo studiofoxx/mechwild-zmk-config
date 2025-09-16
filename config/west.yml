@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/mechwild
     - name: lesshonor
       url-base: https://github.com/lesshonor
+    - name: prospector
+      url-base: https://github.com/t-ogura  
     # Additional modules containing boards/shields/custom code can be listed here as well.
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -14,6 +16,11 @@ manifest:
       remote: lesshonor  # Eventually, you'll want to swap this out with mechwild.
       revision: main
       clone-depth: 1
+    - name: prospector-zmk-module
+      remote: prospector
+      revision: v1.1.1
+      path: modules/prospector-zmk-module
+
     - name: zmk
       remote: zmkfirmware
       revision: main
@@ -23,19 +30,3 @@ manifest:
     path: config
 
 #adding support for prospector
-
-manifest:
-  remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
-    - name: prospector
-      url-base: https://github.com/t-ogura
-  projects:
-    - name: zmk
-      remote: zmkfirmware
-      revision: main
-      import: app/west.yml
-    - name: prospector-zmk-module
-      remote: prospector
-      revision: v1.1.1
-      path: modules/prospector-zmk-module
