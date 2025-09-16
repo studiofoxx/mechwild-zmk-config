@@ -21,3 +21,21 @@ manifest:
       import: app/west.yml
   self:
     path: config
+
+#adding support for prospector
+
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: prospector
+      url-base: https://github.com/t-ogura
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+    - name: prospector-zmk-module
+      remote: prospector
+      revision: v1.1.1
+      path: modules/prospector-zmk-module
